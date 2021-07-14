@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Formulario de contacto</title>
+	<title>Formulario de contacto | Veterinaria Woof</title>
 	<!--foundation-->
 	<!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css" integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
@@ -34,7 +34,7 @@
 <body>
 	
 	
-	<form autocomplete="off" method="POST" action="data.php" id="formWoof">
+	<form autocomplete="off" id="formWoof">
 
 	  <div class="grid-container">
 	  	
@@ -42,34 +42,57 @@
 	    <div class="medium-3 cell"></div>
 
 	      <div class="medium-6 cell ">
-	      	<br><h2 class="text-center">Formulario de contácto</h2><br>
+	      	<br><h2 class="text-center">Formulario de contacto</h2>
+	      	<p class="text-center">Una experiencia diferente, donde tu mascota es nuestra pasión</p>
+	      	<br>
 	        <label>Nombre completo:
-	          <input type="text" name="nombre_usuario" id="nombre_usuario"  required>
+	          <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="" required>
 	        </label>
 
-	        <label>Correo electrónico:
-	          <input type="email" name="correo" id="correo"  required>
-	        </label>
+	         <div class="grid-x grid-padding-x">
+		        <div class="medium-6 cell ">
+		        	<label>Correo electrónico:
+		          <input type="email" name="correo" id="correo" placeholder="" required>
+		        </label>
+		         </div>
 
-	        <label>
-			  Escríbenos tus dudas o consultas
-			  <textarea name="descripcion" id="descripcion" required></textarea>
+		         <div class="medium-6 cell ">
+			         <label>Número de WhatsApp:
+			          <input type="number" name="numWhats" id="numWhats" placeholder="" required>
+			        </label>
+		        </div>
+	         </div>
+
+	        <label>Sucursal de preferencia
+			  <select id="sucursal" name="sucursal" placeholder="">
+			  	<option value="opción" selected = "selected" disabled>Seleccione una opción</option>
+			    <option value="1">Estadio Cuscatlán</option>
+			    <option value="2">Centro Comercial La Joya</option>
+			    <option value="3">Soyapango</option>
+			    <option value="4">Centro Comercial San Benito</option>
+			  </select>
 			</label>
+
+	        <label>Escríbenos tus dudas, consultas o sugerencias			 
+			  <textarea name="descripcion" id="descripcion" required placeholder="" style="height: 10%; resize: none; "></textarea>
+			</label>
+
 			<br>
 			<button type="submit" id="butonEnviar" class="button primary">
-				<i class="fas fa-paper-plane"></i> Enviar correo
+				<i class="fas fa-paper-plane"></i> Enviar
 			</button>
 	      </div>
 	      <div class="medium-3 cell"></div>
 	    </div>
 	  </div>
+
 	</form>
 
 
 
 
 
-
+	<script src="script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<!--validate-->
 	<script src="jquery-validation/dist/jquery.validate.js"></script>
