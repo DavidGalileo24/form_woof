@@ -1,4 +1,18 @@
 'use strict'
+function isMobile() {
+	    if (sessionStorage.desktop)
+	        return false;
+	    else if (localStorage.mobile)
+	        return true;
+	    var mobile = ['iphone', 'ipad', 'android', 'blackberry', 'nokia', 'opera mini', 'windows mobile', 'windows phone', 'iemobile'];
+	    for (var i in mobile)
+	        if (navigator.userAgent.toLowerCase().indexOf(mobile[i].toLowerCase()) > 0) return true;
+	    return false;
+	}
+
+
+
+
 
 let butonEnviar = document.querySelector('#butonEnviar');
 butonEnviar.addEventListener('click', function(e){
@@ -17,90 +31,127 @@ butonEnviar.addEventListener('click', function(e){
 	let numWhats = document.querySelector('#numWhats').value;
 	let sucursal = document.querySelector('#sucursal').value;
 	let descripcion = document.querySelector('#descripcion').value;
+	let urlDesktop = 'https://api.whatsapp.com/';
+	let urlMobile = 'whatsapp://';
+	let url = "";
+	
+		if(sucursal == 'Estadio Cuscatlán'){
+			let url =`send?phone=${cuscatlan}&text=
+			*_VETERINARIA WOOF_*%0A%0A
+			*Nombre completo:*%0A
+			${nombre_usuario}%0A%0A
 
-	if(sucursal == 'Estadio Cuscatlán'){
-		let url = `https://api.whatsapp.com/send?phone=${cuscatlan}&text=
-		*_VETERINARIA WOOF_*%0A%0A
-		*Nombre completo:*%0A
-		${nombre_usuario}%0A%0A
+			*Correo electrónico:*%0A
+			${correo}%0A%0A
 
-		*Correo electrónico:*%0A
-		${correo}%0A%0A
+			*Número de WhatsApp:*%0A
+			${numWhats}%0A%0A
 
-		*Número de WhatsApp:*%0A
-		${numWhats}%0A%0A
+			*Sucursal de preferencia:*%0A
+			${sucursal}%0A%0A
 
-		*Sucursal de preferencia:*%0A
-		${sucursal}%0A%0A
+			*Duda consulta o sugerencia:*%0A
+			${descripcion}`;
+			
+			if(isMobile()) {
+	            window.open(urlMobile + url, '_blank');
+	            formWoof.reset();
+	        }else{
+	            window.open(urlDesktop + url, '_blank');
+	            formWoof.reset();
+	        }
 
-		*Duda consulta o sugerencia:*%0A
-		${descripcion}`;
-		window.open(url);
-		formWoof.reset();
+		}
+   
+		else if(sucursal == 'Centro Comercial La Joya'){
+			let url = `send?phone=${joya}&text=
+			*_VETERINARIA WOOF_*%0A%0A
+			*Nombre completo:*%0A
+			${nombre_usuario}%0A%0A
 
-	}else if(sucursal == 'Centro Comercial La Joya'){
-		let url = `https://api.whatsapp.com/send?phone=${joya}&text=
-		*_VETERINARIA WOOF_*%0A%0A
-		*Nombre completo:*%0A
-		${nombre_usuario}%0A%0A
+			*Correo electrónico*%0A
+			${correo}%0A%0A
 
-		*Correo electrónico*%0A
-		${correo}%0A%0A
+			*Número de WhatsApp:*%0A
+			${numWhats}%0A%0A
 
-		*Número de WhatsApp:*%0A
-		${numWhats}%0A%0A
+			*Sucursal de preferencia:*%0A
+			${sucursal}%0A%0A
 
-		*Sucursal de preferencia:*%0A
-		${sucursal}%0A%0A
+			*Duda consulta o sugerencia:*%0A
+			${descripcion}`;
+			
+			if(isMobile()) {
+	            window.open(urlMobile + url, '_blank');
+	            formWoof.reset();
+	        }else{
+	            window.open(urlDesktop + url, '_blank');
+	            formWoof.reset();
+	        }
 
-		*Duda consulta o sugerencia:*%0A
-		${descripcion}`;
-		window.open(url);
-		formWoof.reset();
+		}
 
-	}else if(sucursal == 'Soyapango'){
-		let url = `https://api.whatsapp.com/send?phone=${soya}&text=
-		*_VETERINARIA WOOF_*%0A%0A
-		*Nombre completo:*%0A
-		${nombre_usuario}%0A%0A
 
-		*Correo electrónico:*%0A
-		${correo}%0A%0A
+		else if(sucursal == 'Soyapango'){
+			let url = `send?phone=${soya}&text=
+			*_VETERINARIA WOOF_*%0A%0A
+			*Nombre completo:*%0A
+			${nombre_usuario}%0A%0A
 
-		*Número de WhatsApp:*%0A
-		${numWhats}%0A%0A
+			*Correo electrónico:*%0A
+			${correo}%0A%0A
 
-		*Sucursal de preferencia:*%0A
-		${sucursal}%0A%0A
+			*Número de WhatsApp:*%0A
+			${numWhats}%0A%0A
 
-		*Duda consulta o sugerencia:*%0A
-		${descripcion}`;
-		window.open(url);
-		formWoof.reset();
+			*Sucursal de preferencia:*%0A
+			${sucursal}%0A%0A
 
-	}
-	else if(sucursal == 'Centro Comercial San Benito'){
-		let url = `https://api.whatsapp.com/send?phone=${sanBenito}&text=
-		*_VETERINARIA WOOF_*%0A%0A
-		*Nombre completo:*%0A
-		${nombre_usuario}%0A%0A
+			*Duda consulta o sugerencia:*%0A
+			${descripcion}`;
+			
+			if(isMobile()) {
+	            window.open(urlMobile + url, '_blank');
+	            formWoof.reset();
+	        }else{
+	            window.open(urlDesktop + url, '_blank');
+	            formWoof.reset();
+	        }
 
-		*Correo electrónico:*%0A
-		${correo}%0A%0A
+		}
 
-		*Número de WhatsApp:*%0A
-		${numWhats}%0A%0A
 
-		*Sucursal de preferencia:*%0A
-		${sucursal}%0A%0A
+		else if(sucursal == 'Centro Comercial San Benito'){
+			let url = `send?phone=${sanBenito}&text=
+			*_VETERINARIA WOOF_*%0A%0A
+			*Nombre completo:*%0A
+			${nombre_usuario}%0A%0A
 
-		*Duda consulta o sugerencia:*%0A
-		${descripcion}`;
-		window.open(url);
-		formWoof.reset();
-	}
+			*Correo electrónico:*%0A
+			${correo}%0A%0A
 
-});
+			*Número de WhatsApp:*%0A
+			${numWhats}%0A%0A
+
+			*Sucursal de preferencia:*%0A
+			${sucursal}%0A%0A
+
+			*Duda consulta o sugerencia:*%0A
+			${descripcion}`;
+			
+			if(isMobile()) {
+	            window.open(urlMobile + url, '_blank');
+	            formWoof.reset();
+	        }else{
+	            window.open(urlDesktop + url, '_blank');
+	            formWoof.reset();
+	        }
+			
+		}
+
+		
+
+});//end event
 
 
 

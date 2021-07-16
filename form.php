@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Formulario de contacto | Veterinaria Woof</title>
+	<title>Veterinaria Woof | Formulario de contacto</title>
 	<!--foundation-->
 	<!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css" integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
@@ -76,7 +76,7 @@
 </head>
 <body>
 	<br>
-	<form autocomplete="off" id="formWoof" class="formWoof" method="POST" action="redirect.php">
+	<form autocomplete="off" id="formWoof" class="formWoof" method="POST">
 
 	  <div class="grid-container">
 	  	
