@@ -25,24 +25,66 @@
 	<style>
 		body{
 			font-family: 'Open Sans', sans-serif;
+			background-image: url('fondo1.png');
+			background-attachment: fixed;
+			background-size: 100% 100%;
 		}
 		.error{
-			color:  red;
+			color: crimson;
+		}
+		.formWoof{
+			background-color: rgba(27, 37, 70, .7);
+			width: 50%;
+			padding: 10px;
+			display: block;
+			margin: 0 auto;
+			color:  white;
+
+		}
+		label{
+			color: white;
+		}
+		.logo1{
+			width: 350px;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
+
+
+		@media (max-width: 575.98px) {
+			body{
+				background-image: url('fondoMovil.png');
+				background-attachment: fixed;
+				background-size: 100% 100%;
+			}
+			.formWoof{
+				width: 95%;
+			}
+		}
+		@media (max-width: 767.98px) {
+			.formWoof{
+				width: 80%;
+			}
+		}
+		@media (max-width: 991.98px) {
+			.formWoof{
+				width: 80%;
+			}
 		}
 	</style> 
 </head>
 <body>
-	
-	
-	<form autocomplete="off" id="formWoof">
+	<br>
+	<form autocomplete="off" id="formWoof" class="formWoof" method="POST" action="redirect.php">
 
 	  <div class="grid-container">
 	  	
 	    <div class="grid-x grid-padding-x">
-	    <div class="medium-3 cell"></div>
+	    <div class="medium-0 cell"></div>
 
-	      <div class="medium-6 cell ">
-	      	<br><h2 class="text-center">Formulario de contacto</h2>
+	      <div class="medium-x cell ">
+	      	<br><img src="logo1.svg" alt="Logo Veterinaria Woof" class="logo1">
 	      	<p class="text-center">Una experiencia diferente, donde tu mascota es nuestra pasión</p>
 	      	<br>
 	        <label>Nombre completo:
@@ -58,31 +100,32 @@
 
 		         <div class="medium-6 cell ">
 			         <label>Número de WhatsApp:
-			          <input type="number" name="numWhats" id="numWhats" placeholder="" required>
+			          <input type="tel" name="numWhats" id="numWhats" placeholder="" required>
 			        </label>
 		        </div>
 	         </div>
 
 	        <label>Sucursal de preferencia
-			  <select id="sucursal" name="sucursal" placeholder="">
+			  <select id="sucursal" name="sucursal" placeholder="" class="required" > 
 			  	<option value="opción" selected = "selected" disabled>Seleccione una opción</option>
-			    <option value="1">Estadio Cuscatlán</option>
-			    <option value="2">Centro Comercial La Joya</option>
-			    <option value="3">Soyapango</option>
-			    <option value="4">Centro Comercial San Benito</option>
+			    <option value="Estadio Cuscatlán">Estadio Cuscatlán</option>
+			    <option value="Centro Comercial La Joya">Centro Comercial La Joya</option>
+			    <option value="Soyapango">Soyapango</option>
+			    <option value="Centro Comercial San Benito">Centro Comercial San Benito</option>
 			  </select>
 			</label>
 
 	        <label>Escríbenos tus dudas, consultas o sugerencias			 
-			  <textarea name="descripcion" id="descripcion" required placeholder="" style="height: 10%; resize: none; "></textarea>
+			  <textarea name="descripcion" id="descripcion" required placeholder=""></textarea>
 			</label>
 
 			<br>
-			<button type="submit" id="butonEnviar" class="button primary">
+			<button id="butonEnviar" class="button primary">
 				<i class="fas fa-paper-plane"></i> Enviar
 			</button>
+			<button type="reset" id="limpiar" hidden=""></button>
 	      </div>
-	      <div class="medium-3 cell"></div>
+	      <div class="medium-0 cell"></div>
 	    </div>
 	  </div>
 
@@ -98,7 +141,9 @@
 	<script src="jquery-validation/dist/jquery.validate.js"></script>
 	<script>
      	
-     	 $("#formWoof").validate();
+
+	  $('#formWoof').validate();
+		 
     </script>
 </body>
 </html>
