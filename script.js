@@ -28,11 +28,10 @@ butonEnviar.addEventListener('click', function(e){
 	let formWoof = document.querySelector('#formWoof');
 	let nombre_usuario = document.querySelector('#nombre_usuario').value;
 	let correo = document.querySelector('#correo').value;
-	let numWhats = document.querySelector('#numWhats').value;
 	let sucursal = document.querySelector('#sucursal').value;
 	let descripcion = document.querySelector('#descripcion').value;
 	let urlDesktop = 'https://api.whatsapp.com/';
-	let urlMobile = 'whatsapp://';
+	let urlMobile = 'https://web.whatsapp.com/';
 	let url = "";
 	
 		if(sucursal == 'Estadio Cuscatlán'){
@@ -43,9 +42,6 @@ butonEnviar.addEventListener('click', function(e){
 
 			*Correo electrónico:*%0A
 			${correo}%0A%0A
-
-			*Número de WhatsApp:*%0A
-			${numWhats}%0A%0A
 
 			*Sucursal de preferencia:*%0A
 			${sucursal}%0A%0A
@@ -71,9 +67,6 @@ butonEnviar.addEventListener('click', function(e){
 
 			*Correo electrónico*%0A
 			${correo}%0A%0A
-
-			*Número de WhatsApp:*%0A
-			${numWhats}%0A%0A
 
 			*Sucursal de preferencia:*%0A
 			${sucursal}%0A%0A
@@ -101,9 +94,6 @@ butonEnviar.addEventListener('click', function(e){
 			*Correo electrónico:*%0A
 			${correo}%0A%0A
 
-			*Número de WhatsApp:*%0A
-			${numWhats}%0A%0A
-
 			*Sucursal de preferencia:*%0A
 			${sucursal}%0A%0A
 
@@ -130,9 +120,6 @@ butonEnviar.addEventListener('click', function(e){
 			*Correo electrónico:*%0A
 			${correo}%0A%0A
 
-			*Número de WhatsApp:*%0A
-			${numWhats}%0A%0A
-
 			*Sucursal de preferencia:*%0A
 			${sucursal}%0A%0A
 
@@ -148,8 +135,6 @@ butonEnviar.addEventListener('click', function(e){
 	        }
 			
 		}
-
-		
 
 });//end event
 

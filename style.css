@@ -1,0 +1,127 @@
+	*{
+		margin:  0;
+		pádding: 0;
+		box-sizing:  border-box;
+	}
+
+	body{
+		font-family: 'Open Sans', sans-serif;
+		background-image: url('fondo1.png');
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		font-size: 15px;
+	}
+		.error{
+			color: crimson;
+		}
+		.formWoof{
+			background-color: rgba(27, 37, 70, .7);
+			height: auto;
+			display: block;
+			margin:  0 auto;
+			padding: 10px;
+			color:  white;
+			border-radius:  10px;
+			
+		}
+		label{
+			color: white;
+		}
+		.logo1{
+			width: 275px;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
+		.redesSociales{
+			background-color: rgba(23, 23, 23, 0.5);
+			height: 100vh;
+			text-align: center;
+			width: auto%;
+		}
+		ul li{
+			list-style: none;
+			margin: 15px 0;
+		}
+		.indexIcon{
+			margin-top:  40vh;
+		}
+		.ancla{
+			color:  white;
+		}
+		.iconRedes{
+			font-size: 1.7em;
+			border-bottom:  1px solid white;
+			padding-bottom: 5px;
+			
+		}
+		.mainContainer{
+			max-width: 100vh;
+		}
+		.redesSociales2{
+			display: none;
+		}
+		.grid-x > .large-1{
+			width: 5%;
+		}
+
+
+
+
+
+		/*BREAKPOINTS*/
+
+		@media (max-width: 575.98px) {
+			body{
+				background-image: url('fondoMovil.png');
+				background-attachment: fixed;
+				background-size: 100% 100%;
+			}
+			.formWoof{
+				width: 95%;
+			}
+			.redesSociales{
+				display:  none;
+			}
+			
+
+		}
+
+
+
+
+		@media (max-width: 780.98px) {
+			.formWoof{
+				width: 80%;
+			}
+			.redesSociales{
+				display:  block;
+			}
+		}
+
+
+
+		@media (max-width: 999.98px) {
+			.formWoof{
+				width: 90%;
+			}
+			.redesSociales{
+				display:  none;
+			}
+			.redesSociales2{
+				/*background-color: rgba(23, 23, 23, 0.5);*/
+				height: auto;
+				text-align: center;
+				width: auto;
+				display: block;
+			}
+			.lista2 .item2{
+				display: flex;
+				display:  inline-block;
+				margin:  0 7px;
+			}
+			.iconRedes{
+				border-bottom:  0px solid white;
+				
+			}
+		}

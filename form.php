@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Veterinaria Woof | Formulario de contacto</title>
-	<!--foundation-->
+
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+
 	<!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css" integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
 
@@ -21,117 +23,83 @@
 	<!--fontawesome-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
-
-	<style>
-		body{
-			font-family: 'Open Sans', sans-serif;
-			background-image: url('fondo1.png');
-			background-attachment: fixed;
-			background-size: 100% 100%;
-		}
-		.error{
-			color: crimson;
-		}
-		.formWoof{
-			background-color: rgba(27, 37, 70, .7);
-			width: 50%;
-			padding: 10px;
-			display: block;
-			margin: 0 auto;
-			color:  white;
-
-		}
-		label{
-			color: white;
-		}
-		.logo1{
-			width: 350px;
-			height: auto;
-			display: block;
-			margin: 0 auto;
-		}
-
-
-		@media (max-width: 575.98px) {
-			body{
-				background-image: url('fondoMovil.png');
-				background-attachment: fixed;
-				background-size: 100% 100%;
-			}
-			.formWoof{
-				width: 95%;
-			}
-		}
-		@media (max-width: 767.98px) {
-			.formWoof{
-				width: 80%;
-			}
-		}
-		@media (max-width: 991.98px) {
-			.formWoof{
-				width: 80%;
-			}
-		}
-	</style> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
 </head>
 <body>
-	<br>
-	<form autocomplete="off" id="formWoof" class="formWoof" method="POST">
+	
 
-	  <div class="grid-container">
-	  	
-	    <div class="grid-x grid-padding-x">
-	    <div class="medium-0 cell"></div>
-
-	      <div class="medium-x cell ">
-	      	<br><img src="logo1.svg" alt="Logo Veterinaria Woof" class="logo1">
-	      	<p class="text-center">Una experiencia diferente, donde tu mascota es nuestra pasión</p>
-	      	<br>
-	        <label>Nombre completo:
-	          <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="" required>
-	        </label>
-
-	         <div class="grid-x grid-padding-x">
-		        <div class="medium-6 cell ">
-		        	<label>Correo electrónico:
-		          <input type="email" name="correo" id="correo" placeholder="" required>
-		        </label>
-		         </div>
-
-		         <div class="medium-6 cell ">
-			         <label>Número de WhatsApp:
-			          <input type="tel" name="numWhats" id="numWhats" placeholder="" required>
-			        </label>
-		        </div>
-	         </div>
-
-	        <label>Sucursal de preferencia
-			  <select id="sucursal" name="sucursal" placeholder="" class="required" > 
-			  	<option value="opción" selected = "selected" disabled>Seleccione una opción</option>
-			    <option value="Estadio Cuscatlán">Estadio Cuscatlán</option>
-			    <option value="Centro Comercial La Joya">Centro Comercial La Joya</option>
-			    <option value="Soyapango">Soyapango</option>
-			    <option value="Centro Comercial San Benito">Centro Comercial San Benito</option>
-			  </select>
-			</label>
-
-	        <label>Escríbenos tus dudas, consultas o sugerencias			 
-			  <textarea name="descripcion" id="descripcion" required placeholder=""></textarea>
-			</label>
-
-			<br>
-			<button id="butonEnviar" class="button primary">
-				<i class="fas fa-paper-plane"></i> Enviar
-			</button>
-			<button type="reset" id="limpiar" hidden=""></button>
-	      </div>
-	      <div class="medium-0 cell"></div>
-	    </div>
+	<div class="grid-x">
+	  <div class="cell small-1 medium-1 large-1 redesSociales">
+	  	<div class="columns small-0">
+	  		<ul>
+	  			<li><a href="https://www.facebook.com/woofvet" class="ancla"><i class="fab fa-facebook-f iconRedes indexIcon"></i></a></li>
+	  			<li><a href="https://www.instagram.com/woof_vet/" class="ancla"><i class="fab fa-instagram iconRedes"></i></a></li>
+	  			<li><a href="https://veterinariaswoof.com/" class="ancla"><i class="fas fa-globe iconRedes"></i></a></li>
+	  		</ul>
+	  	</div>
 	  </div>
+	   <div class="cell small-3 medium-2 large-3"></div>
+	  <div class="cell small-12 medium-8 large-5">
+	  	<br>
+	  		<form autocomplete="off" id="formWoof" class="formWoof" method="POST">
 
-	</form>
+			  <div class="grid-container">
+			  	
+			    <div class="grid-x grid-padding-x">
+			    <div class="medium-0 cell"></div>
 
+			      <div class="medium-x cell ">
+			      	<br><img src="logo1.svg" alt="Logo Veterinaria Woof" class="logo1">
+			      	<p class="text-center">Una experiencia diferente, donde tu mascota es nuestra pasión</p>
+			      	<br>
+			        <label>Nombre completo:
+			          <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="" required>
+			        </label>
 
+			       <label>Correo electrónico:
+					    <input type="email" name="correo" id="correo" placeholder="" required>
+					</label>
+
+			        <label>Sucursal de preferencia
+					  <select id="sucursal" name="sucursal" placeholder="" class="required" > 
+					  	<option value="opción" selected = "selected" disabled>Seleccione una opción</option>
+					    <option value="Estadio Cuscatlán">Estadio Cuscatlán (Servicio 24/7)</option>
+					    <option value="Centro Comercial La Joya">Centro Comercial La Joya</option>
+					    <option value="Soyapango">Soyapango (Servicio 24/7)</option>
+					    <option value="Centro Comercial San Benito">Centro Comercial San Benito</option>
+					  </select>
+					</label>
+
+			        <label>Escríbenos tus dudas, consultas o sugerencias			 
+					  <textarea name="descripcion" id="descripcion" required placeholder=""></textarea>
+					</label>
+
+					<br>
+					<button id="butonEnviar" class="button success">
+						<i class="fab fa-whatsapp"></i> Enviar
+					</button>
+					<button type="reset" id="limpiar" hidden=""></button>
+			      </div>
+			      <div class="medium-0 cell"></div>
+			    </div>
+			  </div>
+
+		</form>
+	  </div>
+	  <div class="cell small-4 medium-1 large-3"></div>
+	</div>
+	<br>
+
+	<div class="grid-x">
+	  <div class="cell small-12 medium-12 large-0 redesSociales2">
+	  		<ul class="lista2">
+	  			<li class="item2"><a href="https://www.facebook.com/woofvet" class="ancla"><i class="fab fa-facebook-f iconRedes"></i></a></li>
+	  			<li class="item2"><a href="https://www.instagram.com/woof_vet/" class="ancla"><i class="fab fa-instagram iconRedes"></i></a></li>
+	  			<li class="item2"><a href="https://veterinariaswoof.com/" class="ancla"><i class="fas fa-globe iconRedes"></i></a></li>
+	  		</ul>
+	  </div>
+	</div>
 
 
 
