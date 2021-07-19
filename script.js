@@ -31,7 +31,7 @@ butonEnviar.addEventListener('click', function(e){
 	let sucursal = document.querySelector('#sucursal').value;
 	let descripcion = document.querySelector('#descripcion').value;
 	let urlDesktop = 'https://api.whatsapp.com/';
-	let urlMobile = 'https://web.whatsapp.com/';
+	let urlMobile = 'whatsapp://';
 	let url = "";
 	
 		if(sucursal == 'Estadio Cuscatlán'){

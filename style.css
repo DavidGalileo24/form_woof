@@ -8,7 +8,9 @@
 		font-family: 'Open Sans', sans-serif;
 		background-image: url('fondo1.png');
 		background-attachment: fixed;
-		background-size: 100% 100%;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
 		font-size: 15px;
 	}
 		.error{
@@ -75,7 +77,9 @@
 			body{
 				background-image: url('fondoMovil.png');
 				background-attachment: fixed;
-				background-size: 100% 100%;
+				background-size: cover;
+				background-position: center center;
+				background-repeat: no-repeat;
 			}
 			.formWoof{
 				width: 95%;
@@ -111,7 +115,7 @@
 			.redesSociales2{
 				/*background-color: rgba(23, 23, 23, 0.5);*/
 				height: auto;
-				text-align: center;
+				text-align: right;
 				width: auto;
 				display: block;
 			}
