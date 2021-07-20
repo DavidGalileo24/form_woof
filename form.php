@@ -76,9 +76,26 @@
 					</label>
 
 					<br>
-					<button id="butonEnviar" class="button success">
-						<i class="fab fa-whatsapp"></i> Enviar
-					</button>
+					
+					<div class="grid-x">
+
+						<div class="cell small-3 medium-3 large-0">
+					  		<button id="btnEnviar" class="button success">
+								<i class="fab fa-whatsapp"></i> Enviar
+							</button>
+					  </div>
+					  <div class="cell small-4 medium-4 large-0"></div>
+					  <div class="cell small-5 medium-5 large-0 redesSociales2">
+					  	
+					  		<ul class="lista2">
+					  			<li class="item2"><a href="https://www.facebook.com/woofvet" class="ancla"><i class="fab fa-facebook-f iconRedes2"></i></a></li>
+					  			<li class="item2"><a href="https://www.instagram.com/woof_vet/" class="ancla"><i class="fab fa-instagram iconRedes2"></i></a></li>
+					  			<li class="item2"><a href="https://veterinariaswoof.com/" class="ancla"><i class="fas fa-globe iconRedes2"></i></a></li>
+					  		</ul>
+					  </div>					   
+					</div>
+
+
 					<button type="reset" id="limpiar" hidden=""></button>
 			      </div>
 			      <div class="medium-0 cell"></div>
@@ -91,15 +108,7 @@
 	</div>
 	<br>
 
-	<div class="grid-x">
-	  <div class="cell small-12 medium-12 large-0 redesSociales2">
-	  		<ul class="lista2">
-	  			<li class="item2"><a href="https://www.facebook.com/woofvet" class="ancla"><i class="fab fa-facebook-f iconRedes"></i></a></li>
-	  			<li class="item2"><a href="https://www.instagram.com/woof_vet/" class="ancla"><i class="fab fa-instagram iconRedes"></i></a></li>
-	  			<li class="item2"><a href="https://veterinariaswoof.com/" class="ancla"><i class="fas fa-globe iconRedes"></i></a></li>
-	  		</ul>
-	  </div>
-	</div>
+	
 
 
 

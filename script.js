@@ -14,7 +14,7 @@ function isMobile() {
 
 
 
-let butonEnviar = document.querySelector('#butonEnviar');
+let butonEnviar = document.querySelector('#btnEnviar');
 butonEnviar.addEventListener('click', function(e){
 	e.preventDefault();
 

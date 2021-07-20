@@ -39,7 +39,7 @@
 			background-color: rgba(23, 23, 23, 0.5);
 			height: 100vh;
 			text-align: center;
-			width: auto%;
+			width: auto;
 		}
 		ul li{
 			list-style: none;
@@ -57,6 +57,9 @@
 			padding-bottom: 5px;
 			
 		}
+		.iconRedes2{
+			font-size: 1.7em;
+		}
 		.mainContainer{
 			max-width: 100vh;
 		}
@@ -66,7 +69,9 @@
 		.grid-x > .large-1{
 			width: 5%;
 		}
-
+		.lista2 .item2{
+			list-style: none;
+		}
 
 
 
@@ -118,6 +123,7 @@
 				text-align: right;
 				width: auto;
 				display: block;
+				margin-top:  12px;
 			}
 			.lista2 .item2{
 				display: flex;
