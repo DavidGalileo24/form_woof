@@ -4,7 +4,7 @@ function isMobile() {
 	        return false;
 	    else if (localStorage.mobile)
 	        return true;
-	    var mobile = ['iphone', 'ipad', 'android', 'blackberry', 'nokia', 'opera mini', 'windows mobile', 'windows phone', 'iemobile'];
+	    var mobile = ['iPhone', 'ipad', 'android', 'blackberry', 'nokia', 'opera mini', 'windows mobile', 'windows phone', 'iemobile'];
 	    for (var i in mobile)
 	        if (navigator.userAgent.toLowerCase().indexOf(mobile[i].toLowerCase()) > 0) return true;
 	    return false;
@@ -19,10 +19,10 @@ butonEnviar.addEventListener('click', function(e){
 	e.preventDefault();
 
 	//números de telefono de sucursales
-	let cuscatlan = "50379876355"; //Jorge
-	let joya = "50372622693"; //Bri
-	let soya = "50379544510"; //Ernesto
-	let sanBenito = "50376276889"; //Jennifer
+	let cuscatlan = "50378054360"; 
+	let joya = "50372008159";
+	let soya = "50370184872";
+	let sanBenito = "50370246784";
 
 	//id de formularios
 	let formWoof = document.querySelector('#formWoof');

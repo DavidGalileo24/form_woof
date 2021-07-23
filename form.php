@@ -18,7 +18,7 @@
 	<!--google fonts-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet"> 
 
 	<!--fontawesome-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -41,7 +41,7 @@
 	  </div>
 	   <div class="cell small-3 medium-2 large-3"></div>
 	  <div class="cell small-12 medium-8 large-5">
-	  	<br>
+	  	<br><br>
 	  		<form autocomplete="off" id="formWoof" class="formWoof" method="POST">
 
 			  <div class="grid-container">
@@ -64,10 +64,10 @@
 			        <label>Sucursal de preferencia
 					  <select id="sucursal" name="sucursal" placeholder="" class="required" > 
 					  	<option value="opción" selected = "selected" disabled>Seleccione una opción</option>
-					    <option value="Estadio Cuscatlán">Estadio Cuscatlán (Servicio 24/7)</option>
-					    <option value="Centro Comercial La Joya">Centro Comercial La Joya</option>
-					    <option value="Soyapango">Soyapango (Servicio 24/7)</option>
-					    <option value="Centro Comercial San Benito">Centro Comercial San Benito</option>
+					    <option class="opcionSelect" value="Estadio Cuscatlán">Estadio Cuscatlán (Servicio 24/7)</option>
+					    <option class="opcionSelect" value="Centro Comercial La Joya">Centro Comercial La Joya</option>
+					    <option class="opcionSelect" value="Soyapango">Soyapango (Servicio 24/7)</option>
+					    <option class="opcionSelect" value="Centro Comercial San Benito">Centro Comercial San Benito</option>
 					  </select>
 					</label>
 
@@ -77,15 +77,15 @@
 
 					<br>
 					
-					<div class="grid-x">
+					<div class="grid-x flexData">
 
-						<div class="cell small-3 medium-3 large-0">
+						<div class="">
 					  		<button id="btnEnviar" class="button success">
 								<i class="fab fa-whatsapp"></i> Enviar
 							</button>
 					  </div>
-					  <div class="cell small-4 medium-4 large-0"></div>
-					  <div class="cell small-5 medium-5 large-0 redesSociales2">
+					  
+					  <div class="">
 					  	
 					  		<ul class="lista2">
 					  			<li class="item2"><a href="https://www.facebook.com/woofvet" class="ancla"><i class="fab fa-facebook-f iconRedes2"></i></a></li>
@@ -95,8 +95,6 @@
 					  </div>					   
 					</div>
 
-
-					<button type="reset" id="limpiar" hidden=""></button>
 			      </div>
 			      <div class="medium-0 cell"></div>
 			    </div>
@@ -112,7 +110,7 @@
 
 
 
-	<script src="script.js"></script>
+	<script src="js/script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<!--validate-->
 	<script src="jquery-validation/dist/jquery.validate.js"></script>

@@ -5,13 +5,13 @@
 	}
 
 	body{
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Josefin Sans', sans-serif;
 		background-image: url('fondo1.png');
 		background-attachment: fixed;
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
-		font-size: 15px;
+		font-size: 17px;
 	}
 		.error{
 			color: crimson;
@@ -28,6 +28,9 @@
 		}
 		label{
 			color: white;
+		}
+		form > select > .opcionSelect{
+			font-family: 'Josefin Sans', sans-serif;
 		}
 		.logo1{
 			width: 275px;
@@ -57,9 +60,7 @@
 			padding-bottom: 5px;
 			
 		}
-		.iconRedes2{
-			font-size: 1.7em;
-		}
+		
 		.mainContainer{
 			max-width: 100vh;
 		}
@@ -72,9 +73,12 @@
 		.lista2 .item2{
 			list-style: none;
 		}
-
-
-
+		.iconRedes2{
+			font-size: 1.7em;
+		}
+		.flexData{
+			display: none;
+		}
 
 		/*BREAKPOINTS*/
 
@@ -92,7 +96,11 @@
 			.redesSociales{
 				display:  none;
 			}
-			
+			.flexData{
+				display: flex;
+				justify-content: space-between;
+			}
+
 
 		}
 
@@ -106,6 +114,11 @@
 			.redesSociales{
 				display:  block;
 			}
+			.flexData{
+				display: flex;
+				justify-content: space-between;
+			}
+
 		}
 
 
@@ -123,15 +136,21 @@
 				text-align: right;
 				width: auto;
 				display: block;
-				margin-top:  12px;
+				
 			}
 			.lista2 .item2{
 				display: flex;
 				display:  inline-block;
-				margin:  0 7px;
+				margin:  0 5px;
+				margin-top: 7px;
 			}
 			.iconRedes{
 				border-bottom:  0px solid white;
 				
 			}
+			.flexData{
+				display: flex;
+				justify-content: space-between;
+			}
+
 		}
