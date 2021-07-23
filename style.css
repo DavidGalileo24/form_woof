@@ -29,9 +29,6 @@
 		label{
 			color: white;
 		}
-		form > select > .opcionSelect{
-			font-family: 'Josefin Sans', sans-serif;
-		}
 		.logo1{
 			width: 275px;
 			height: auto;
@@ -76,7 +73,7 @@
 		.iconRedes2{
 			font-size: 1.7em;
 		}
-		.flexData{
+		.ocultar{
 			display: none;
 		}
 
@@ -100,6 +97,9 @@
 				display: flex;
 				justify-content: space-between;
 			}
+			.ocultar{
+				display: block;
+			}
 
 
 		}
@@ -118,7 +118,9 @@
 				display: flex;
 				justify-content: space-between;
 			}
-
+			.ocultar{
+				display: block;
+			}
 		}
 
 
@@ -151,6 +153,9 @@
 			.flexData{
 				display: flex;
 				justify-content: space-between;
+			}
+			.ocultar{
+				display: block;
 			}
 
 		}

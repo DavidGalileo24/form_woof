@@ -78,15 +78,13 @@
 					<br>
 					
 					<div class="grid-x flexData">
-
 						<div class="">
 					  		<button id="btnEnviar" class="button success">
 								<i class="fab fa-whatsapp"></i> Enviar
 							</button>
 					  </div>
 					  
-					  <div class="">
-					  	
+					  <div class="ocultar">					  	
 					  		<ul class="lista2">
 					  			<li class="item2"><a href="https://www.facebook.com/woofvet" class="ancla"><i class="fab fa-facebook-f iconRedes2"></i></a></li>
 					  			<li class="item2"><a href="https://www.instagram.com/woof_vet/" class="ancla"><i class="fab fa-instagram iconRedes2"></i></a></li>
@@ -110,7 +108,7 @@
 
 
 
-	<script src="js/script.js"></script>
+	<script src="script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<!--validate-->
 	<script src="jquery-validation/dist/jquery.validate.js"></script>
