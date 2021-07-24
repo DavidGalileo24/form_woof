@@ -68,6 +68,7 @@
 					    <option class="opcionSelect" value="Centro Comercial La Joya">Centro Comercial La Joya</option>
 					    <option class="opcionSelect" value="Soyapango">Soyapango (Servicio 24/7)</option>
 					    <option class="opcionSelect" value="Centro Comercial San Benito">Centro Comercial San Benito</option>
+					    <option class="opcionSelect" value="Unicentro Metrópolis">Unicentro Metrópolis</option>
 					  </select>
 					</label>
 
