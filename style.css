@@ -1,10 +1,21 @@
+	:root{
+		--color1:  #009fdd;
+		--color2:  #1b2546;
+		--color3:  #1b427c;
+		--color4:  #bbc207;
+		--color5:  #894d17;
+	}
+
 	*{
 		margin:  0;
 		pádding: 0;
 		box-sizing:  border-box;
 	}
-
 	body{
+		font-family: 'Josefin Sans', sans-serif;		
+		font-size: 17px;
+	}
+	.body{
 		font-family: 'Josefin Sans', sans-serif;
 		background-image: url('fondo1.png');
 		background-attachment: fixed;
@@ -12,6 +23,9 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		font-size: 17px;
+	}
+	.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+		font-family: 'Josefin Sans', sans-serif;
 	}
 		.error{
 			color: crimson;
@@ -37,7 +51,7 @@
 		}
 		.redesSociales{
 			background-color: rgba(23, 23, 23, 0.5);
-			height: 100vh;
+			height: auto;
 			text-align: center;
 			width: auto;
 		}
@@ -76,6 +90,46 @@
 		.ocultar{
 			display: none;
 		}
+
+
+
+/*INICIO*/
+.fondo1{
+
+}
+.imgInicio{
+	display: block;
+	margin:  0 auto;
+	margin-top: 50px;
+	cursor: pointer;
+	transition: all;
+	transition-duration: 1s;
+	border-radius: 20%;
+	background-color:  var(--color1);
+	padding: 5px;
+}
+
+.imgInicio:hover{
+	padding:  10px;
+}
+
+.iconRedes1{
+	margin:  10px;
+	font-size: 1.7em;
+	color: var(--color2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 		/*BREAKPOINTS*/
 

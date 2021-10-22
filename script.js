@@ -14,8 +14,8 @@ function isMobile() {
 
 
 
-let butonEnviar = document.querySelector('#btnEnviar');
-butonEnviar.addEventListener('click', function(e){
+let btnEnviar = document.querySelector('#btnEnviar');
+btnEnviar.addEventListener('click', function(e){
 	e.preventDefault();
 
 	//números de telefono de sucursales
