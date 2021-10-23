@@ -50,7 +50,7 @@
 			    <div class="medium-0 cell"></div>
 
 			      <div class="medium-x cell ">
-			      	<br><img src="logo1.svg" alt="Logo Veterinaria Woof" class="logo1">
+			      	<br><img src="images/logo1.svg" alt="Logo Veterinaria Woof" class="logo1">
 			      	<p class="text-center">Una experiencia diferente, donde tu mascota es nuestra pasión</p>
 			      	<br>
 			        <label>Nombre completo:

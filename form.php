@@ -41,7 +41,7 @@
 	  </div>
 	   <div class="cell small-3 medium-2 large-3"></div>
 	  <div class="cell small-12 medium-8 large-5">
-	  	<br><br>
+	  	<br>
 	  		<form autocomplete="off" id="formWoof" class="formWoof" method="POST">
 
 			  <div class="grid-container">
@@ -50,7 +50,7 @@
 			    <div class="medium-0 cell"></div>
 
 			      <div class="medium-x cell ">
-			      	<br><img src="logo1.svg" alt="Logo Veterinaria Woof" class="logo1">
+			      	<br><img src="images/logo1.svg" alt="Logo Veterinaria Woof" class="logo1">
 			      	<p class="text-center">Una experiencia diferente, donde tu mascota es nuestra pasión</p>
 			      	<br>
 			        <label>Nombre completo:

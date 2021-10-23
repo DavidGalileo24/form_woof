@@ -17,7 +17,7 @@
 	}
 	.body{
 		font-family: 'Josefin Sans', sans-serif;
-		background-image: url('fondo1.png');
+		background-image: url('images/fondo1.png');
 		background-attachment: fixed;
 		background-size: cover;
 		background-position: center center;
@@ -51,7 +51,7 @@
 		}
 		.redesSociales{
 			background-color: rgba(23, 23, 23, 0.5);
-			height: auto;
+			height: 100vh;
 			text-align: center;
 			width: auto;
 		}
@@ -105,8 +105,8 @@
 	transition: all;
 	transition-duration: 1s;
 	border-radius: 20%;
-	background-color:  var(--color1);
-	padding: 5px;
+	padding: 20px;
+	background-color: var(--color2);
 }
 
 .imgInicio:hover{
