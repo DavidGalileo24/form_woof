@@ -38,6 +38,7 @@
 			padding: 10px;
 			color:  white;
 			border-radius:  10px;
+			margin-bottom: 50px;
 			
 		}
 		label{
@@ -51,7 +52,7 @@
 		}
 		.redesSociales{
 			background-color: rgba(23, 23, 23, 0.5);
-			height: 100vh;
+			height: auto;
 			text-align: center;
 			width: auto;
 		}

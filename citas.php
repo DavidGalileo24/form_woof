@@ -61,7 +61,11 @@
 					    <input type="email" name="correo" id="correo" placeholder="" required>
 					</label>
 
-			        <label>Sucursal de preferencia
+
+					<div class="grid-container">
+				    <div class="grid-x grid-padding-x">
+				      <div class="medium-6 cell">
+				       	<label>Sucursal de preferencia
 					  <select id="sucursal" name="sucursal" placeholder="" class="required" > 
 					  	<option value="opción" selected = "selected" disabled>Seleccione una opción</option>
 					    <option class="opcionSelect" value="Estadio Cuscatlán">Estadio Cuscatlán (Servicio 24/7)</option>
@@ -71,6 +75,20 @@
 					    <option class="opcionSelect" value="Unicentro Metrópolis">Unicentro Metrópolis</option>
 					  </select>
 					</label>
+				      </div>
+				       <div class="medium-6 cell">
+				       		<label>Servicios
+							  <select id="servicios" name="servicios" placeholder="" class="required" > 
+							  	<option value="opción" selected = "selected" disabled>Seleccione una opción</option>
+							    <option class="opcionSelect" value="Cirugía">Cirugía</option>
+							    <option class="opcionSelect" value="grooming">Grooming</option>
+							   
+							  </select>
+							</label>
+				      </div>
+				      </div>
+				      </div>
+
 
 			        <label>Escríbenos tus dudas, consultas o sugerencias			 
 					  <textarea name="descripcion" id="descripcion" required placeholder=""></textarea>
@@ -81,7 +99,7 @@
 					<div class="grid-x flexData">
 						<div class="">
 					  		<button id="btnEnviar" class="button success">
-								<i class="fab fa-whatsapp"></i> Enviar
+								<i class="fab fa-whatsapp"></i> Reservar cita
 							</button>
 					  </div>
 					  
@@ -103,7 +121,7 @@
 	  </div>
 	  <div class="cell small-4 medium-1 large-3"></div>
 	</div>
-	<br>
+	
 
 	
 
