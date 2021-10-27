@@ -108,6 +108,8 @@
 	border-radius: 20%;
 	padding: 20px;
 	background-color: var(--color2);
+	width:  150px;
+	height: auto;
 }
 
 .imgInicio:hover{
@@ -155,7 +157,9 @@
 			.ocultar{
 				display: block;
 			}
-
+			.imgInicio{
+				width:  100px;
+			}
 
 		}
 
