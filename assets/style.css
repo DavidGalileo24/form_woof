@@ -74,6 +74,7 @@
 			display: block;
 			margin: 0 auto;
 		}
+		
 		.redesSociales{
 			background-color: rgba(23, 23, 23, 0.5);
 			height: auto;
@@ -154,11 +155,45 @@
 		.enlaceInicio{
 			color: black;
 		}
+		.fc-toolbar .fc-center {
+		    display: inline-block;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		}
 
 
 
 
+		/*Dashboard*/
+		.menuDashboard{
+			background-color:  var(--color2);
+			height: auto;
+			min-height: 100vh;
+			color:  white;
+		}
 
+		.colorwhite{
+			color:  white;
+		}
+		.logo2{
+			width: 200px;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
+		.listaMenuDash{		
+			margin-top: 10px;
+			padding: 5px;
+		}
+		.listaMenuDash a{
+			color:  white;
+		}
+		.listaMenuDash:hover{		
+			background-color:  var(--color1);
+			border-radius: 5px;
+			cursor:  pointer;
+		}
+		
 
 
 

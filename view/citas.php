@@ -21,10 +21,7 @@
 					<label for="">Nombre completo:</label>
 					 <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="" class="form-control">
 				</div>
-				<div>
-					<label for="">Nombre</label>
-					
-				</div>
+		
 				<div>
 					<label for="">Correo electrónico:</label>
 					 <input type="email" name="correo" id="correo" placeholder="" class="form-control">
@@ -56,18 +53,18 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<label class="" >Seleccione la fecha:</label>	
-							<input type="date" class="form-control">		
+							<input type="date" class="form-control" name="fecha_reserva" id="fecha_reserva">		
 						</div>
 						<div class="col-lg-6">
 							<label for="">Seleccione la hora</label>		
-							<input type="time" class="form-control">
+							<input type="time" class="form-control" name="hora_reserva" id="hora_reserva">
 						</div>
 					</div>
 					<br>
 					<div class="flexData">
 						<div class="">
 					  		<button id="btnEnviar" class="btn btn-info">
-								Proceder a pagar
+								Efectuar pago
 							</button>
 					  	</div>
 					  <div class="ocultar">					  	
@@ -86,7 +83,5 @@
 
 
 
-
 <?php require_once 'templates/footer.php' ?>
-
 

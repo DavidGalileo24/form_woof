@@ -1,7 +1,12 @@
 {
   "dependencies": {
+    "@fullcalendar/bootstrap": "^5.10.0",
+    "@fullcalendar/core": "^5.10.0",
     "bootstrap": "^5.1.3",
     "fullcalendar": "^5.10.0",
-    "normalize.css": "^8.0.1"
+    "jquery": "^3.6.0",
+    "moment": "^2.29.1",
+    "normalize.css": "^8.0.1",
+    "sweetalert2": "^11.1.9"
   }
 }

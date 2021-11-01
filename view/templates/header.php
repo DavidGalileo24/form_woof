@@ -10,12 +10,19 @@
 	<link rel="stylesheet" href="../assets/bootstrap.min.css">
 	<!--CSS-->
 	<link rel="stylesheet" href="../assets/style.css">
-	<!--google fonts-->
+	<!--Google fonts-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet"> 
-	<!--fontawesome-->
+	<!--Fontawesome-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="icon" type="text/css" href="../assets/images/logo1.svg">
+	<!--Fullcalendar-->
+	<link href="https://fullcalendar.io/releases/fullcalendar/3.10.0/fullcalendar.min.css" rel="stylesheet">
+	<!--Sweet alert-->
+	<link rel="stylesheet" type="text/css" href="../node_modules/sweetalert2/dist/sweetalert2.min.css">
+
+	
 </head>
 
 	
