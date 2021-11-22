@@ -14,6 +14,9 @@
 		public $comentarios;
 		public $id_sucursal;
 		public $id_servicio;
+		//public $nombre_sucursal;
+		//public $direccion;
+		//public $telefono;
 
 		public function __construct(){
 			try {
@@ -35,6 +38,17 @@
 			}
 		}
 
+
+		public function mostrarSucursales(){
+			try {
+				$query = "select * from sucursales";
+				$smt = $this->var_model->prepare($query);
+				$smt->execute();
+				return $smt->fetchAll(PDO::FETCH_OBJ);
+			} catch (Exception $e) {
+				die($e->getMessage());
+			}
+		}
 
 
 

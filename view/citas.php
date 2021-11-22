@@ -64,7 +64,7 @@
 					<div class="flexData">
 						<div class="">
 					  		<button id="btnEnviar" class="btn btn-info">
-								Efectuar pago
+								Reservar ahora
 							</button>
 					  	</div>
 					  <div class="ocultar">					  	

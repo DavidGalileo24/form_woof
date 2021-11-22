@@ -26,7 +26,7 @@
 			</div>
 
 			<div class="col-lg-6 col-sm-0 noneImage">
-				<img src="../assets/images/petImage.jpg" alt="" class="img fluid img-responsive containerImgLogin">
+				<img src="../assets/images/petImage.jpg" alt="" class="img img-fluid img-responsive containerImgLogin">
 			</div>
 		</div>
 	</div>
