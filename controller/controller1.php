@@ -12,7 +12,9 @@
 		public function index(){
 			require_once 'view/inicio.php';
 		}
-
+		public function login(){
+			require_once 'view/inicio-de-sesion.php';
+		}
 		public function citas(){
 			require_once 'view/citas.php';
 		}

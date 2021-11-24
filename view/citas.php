@@ -1,4 +1,17 @@
-<?php require_once 'templates/header.php' ?>
+<?php
+ require_once 'templates/header.php'; 
+ require_once '../database/data.php'; 
+
+$objeto = new data();
+$var = $objeto->conectar();
+
+$query = $var->query("SELECT id_servicio, nombre_servicio, precio_servicio FROM servicios");
+$query->execute();
+$smt = $query->fetchAll(PDO::FETCH_ASSOC);
+
+
+
+?>
 <body class="body">
 
 <div class="container-fluid">
@@ -43,9 +56,11 @@
 						<label for="">Servicios</label>		
 						<select id="servicios" name="servicios" placeholder="" class="form-control"> 
 							<option value="opción" selected = "selected" disabled>Seleccione una opción</option>
-							<option class="opcionSelect" value="Cirugía">Cirugía</option>
-							<option class="opcionSelect" value="grooming">Grooming</option>
-							   
+							<?php foreach($smt as $row){ ?>
+								<option value="">
+									
+								</option>
+							<?php } ?>
 						</select>		
 					</div>
 					

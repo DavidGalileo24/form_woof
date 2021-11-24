@@ -21,6 +21,9 @@
 	<link href="https://fullcalendar.io/releases/fullcalendar/3.10.0/fullcalendar.min.css" rel="stylesheet">
 	<!--Sweet alert-->
 	<link rel="stylesheet" type="text/css" href="../node_modules/sweetalert2/dist/sweetalert2.min.css">
+	<!--Fontawesome-->
+	<link rel="stylesheet" href="../assets/fa/css/all.min.css">
+
 
 	
 </head>
